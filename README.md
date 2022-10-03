@@ -6,9 +6,6 @@ Jeg har valgt React Bibliotek til at bygge min applikation, fordi React har en g
 React har også et stærkt fællesskab, react-eksperter uploader jævnligt[regularly] gratis react tutorials på youtube og skriver dybdegående artikler om react tutorial og blogs på internettet. React har en god QA sites som stackoverflow, så hvis jeg sidder fast, mens jeg bruger react, kan jeg næsten altid få en løsning. React er en meget UI-fokuseret Bibliotek. 
 På grund af React-skabelonen føler jeg, at jeg også sparer en masse tid under produktiviteten
 
-### Css: 
-Jeg beslutter mig for at bruge css til at style mit projekt. da mit projekt ikke er stort, er det bedre at bruge css i stedet for Frameworks som TailwindCss. det gør også min produktivitet hurtig. Brug af css gør det nemt at navigere gennem mine filer, fordi css er adskilt fra min HTML-fil.
-
 # Pakker:
 
 ### React-hook-form:
@@ -19,9 +16,6 @@ Yup er en JavaScript-skemabygger til værdiparsing og validering. Definer et ske
 
 ### React-router-dom:
 React Router Dom bruges til at bygge enkeltsides applikationer, dvs. applikationer, der har mange sider eller komponenter, men siden bliver aldrig opdateret i stedet for, at indholdet hentes dynamisk baseret på URL'en. Denne proces kaldes Routing, og den er muliggjort ved hjælp af React Router Dom.
-
-### Nodmailer:
-Nodemailer er en Node. js-modul, der giver dig mulighed for nemt at sende e-mails fra din server. Uanset om du vil kommunikere med dine brugere eller bare give dig selv besked, når noget er gået galt. Hvis du har en Gmail-konto, kan du bruge den konto med nodemailer direkte. Der er dog flere ulemper ved at gøre det. For det første er der en grænse for udgående e-mail: 500 pr. dag, og hver modtager tæller som 1 udgående e-mail.
 
 ### TailwindCss:
 
