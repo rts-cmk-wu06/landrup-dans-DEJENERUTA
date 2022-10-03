@@ -1,1 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+html {
+  font-family: ubuntu;
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.logo {
+  font-family: Roboto Racing san one;
+}
