@@ -28,10 +28,12 @@ projektarbejdsproces foregår som følgende, jeg opretter et issues på Github o
 Jeg brugte github som mit projektstyringsværktøj, jeg lavede et issue og Github kanban board og styrede mit projekt. GitHub er en kode-hosting-platform til versionskontrol og samarbejde. Det lader dig og andre arbejde sammen om projekter fra hvor som helst.
 
 ### Github issues
-<img width="1250" alt="Github issues" src="https://user-images.githubusercontent.com/45858936/193211238-f5cbe9de-c458-4d13-94d0-f7719d88393d.png">
+<img width="1412" alt="landrup-github-issue" src="https://user-images.githubusercontent.com/45858936/193700768-f01cb7df-a70f-4246-84f2-e91409780a89.png">
+
 
 ### Github Kanban Board
-<img width="1414" alt="Github Kanban Board" src="https://user-images.githubusercontent.com/45858936/193211491-70c68fa7-6925-4e66-9dde-656322de996b.png">
+<img width="1413" alt="landrup-dans-github-kanban" src="https://user-images.githubusercontent.com/45858936/193700791-3c00dbca-5a56-4c8b-bf19-f88696289ff2.png">
+
 
 # Tech-Stack perspektivering:
 Dette projekt kan bygges med Vue,js eller Next.js, men jeg valgte React.js på grund af forskellige årsager
