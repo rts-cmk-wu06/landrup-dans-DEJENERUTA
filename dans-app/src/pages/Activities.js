@@ -14,7 +14,7 @@ const Activities = () => {
       <h1>Aktiviteter</h1>
       <div key={activities.id}>
         {activities.map((activity) => (
-          <img src={activity.url} alt={activity.name} />
+          <img src={activity.asset.url} alt={activity.name} />
         ))}
       </div>
     </div>
