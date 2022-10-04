@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 const Activities = () => {
   const [activities, setActivities] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/v1/assets")
+    fetch("http://localhost:4000/api/v1/activities")
       .then((response) => response.json())
       .then((data) => setActivities(data));
   }, []);
