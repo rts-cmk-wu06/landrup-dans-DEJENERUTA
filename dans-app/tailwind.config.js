@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Ubuntu: ["poppins", "sans-serif"],
+        Ubuntu: "'Ubuntu', sans-serif",
+        logo: "'Racing Sans One', cursive",
       },
       colors: {
         white: "#EAEAEA",
