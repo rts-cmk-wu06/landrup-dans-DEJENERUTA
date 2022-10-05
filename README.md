@@ -54,7 +54,8 @@ const ActivityDetails = () => {
   }, [activityItem?.id]);
   console.log(activityItem);
   ```
-
+# Deployment
+Vercel er en platform til at implementere de hurtigste React-webstites. Du kan implementere dit websted med nul konfiguration til den bedste frontend-infrastruktur.
 
 # Tech-Stack perspektivering:
 Dette projekt kan bygges med Vue,js eller Next.js, men jeg valgte React.js på grund af forskellige årsager
