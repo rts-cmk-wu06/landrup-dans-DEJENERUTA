@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import Activities from "./pages/Activities";
 import Calander from "./pages/Calander";
 import Search from "./pages/Search";
+import ActivityDetails from "./components/ActivityDetails";
 
 function App() {
   return (
@@ -15,6 +16,10 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/calander" element={<Calander />} />
           <Route path="/search" element={<Search />} />
+          <Route
+            path="/activitydetails/:activityId"
+            element={<ActivityDetails />}
+          />
         </Routes>
       </BrowserRouter>
     </>

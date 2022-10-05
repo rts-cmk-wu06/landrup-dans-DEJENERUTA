@@ -5,12 +5,12 @@ import img from "../assets/splash-image.jpg";
 const Welcome = () => {
   return (
     <div
-      className=" bg-cover bg-center min-h-screen position-relative"
+      className=" bg-cover bg-center min-h-screen relative"
       style={{
         backgroundImage: `url(${img})`,
       }}
     >
-      <h1 className="logo position absolute top-1/2 left-5 text-4xl">
+      <h1 className="logo absolute top-1/2 left-5 text-4xl">
         LANDRUP <br />
         <span className="text-6xl text-pink font-bold">DANS</span>
       </h1>
