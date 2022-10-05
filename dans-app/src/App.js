@@ -4,7 +4,7 @@ import Login from "./pages/Login";
 import Activities from "./pages/Activities";
 import Calander from "./pages/Calander";
 import Search from "./pages/Search";
-import ActivityDetails from "./components/ActivityDetails";
+import ActivityDetails from "./pages/ActivityDetails";
 
 function App() {
   return (
