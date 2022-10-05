@@ -12,6 +12,7 @@ module.exports = {
         black: "#000000",
         purple: "#5E2E53",
         pink: "#E1A1E9",
+        gray: "#C4C4C4",
       },
       fontSize: {
         larger: "36px",
