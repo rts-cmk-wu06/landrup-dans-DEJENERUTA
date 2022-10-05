@@ -34,6 +34,27 @@ Jeg brugte github som mit projektstyringsværktøj, jeg lavede et issue og Githu
 ### Github Kanban Board
 <img width="1413" alt="landrup-dans-github-kanban" src="https://user-images.githubusercontent.com/45858936/193700791-3c00dbca-5a56-4c8b-bf19-f88696289ff2.png">
 
+### code example
+``` jsx
+const ActivityDetails = () => {
+  const { activityId } = useParams();
+  const [activity, setActivity] = useState([]);
+  const [activityItem, setActivityItem] = useState([]);
+  useEffect(() => {
+    fetch(`http://localhost:4000/api/v1/activities/${activityId}`)
+      .then((response) => response.json())
+      .then((data) => setActivity(data));
+  }, [activityId]);
+  console.log(activity);
+
+  useEffect(() => {
+    fetch(`http://localhost:4000/api/v1/activities/${activityItem?.id}`)
+      .then((response) => response.json())
+      .then((data) => setActivityItem(data.items));
+  }, [activityItem?.id]);
+  console.log(activityItem);
+  ```
+
 
 # Tech-Stack perspektivering:
 Dette projekt kan bygges med Vue,js eller Next.js, men jeg valgte React.js på grund af forskellige årsager
