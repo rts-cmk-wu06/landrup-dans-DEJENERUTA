@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Navigation from "../components/Navigation";
 
 const ActivityDetails = () => {
   const { activityId } = useParams();
@@ -11,13 +12,6 @@ const ActivityDetails = () => {
       .then((data) => setActivity(data));
   }, [activityId]);
   console.log(activity);
-
-  /* useEffect(() => {
-    fetch(`http://localhost:4000/api/v1/activities/${activityItem?.id}`)
-      .then((response) => response.json())
-      .then((data) => setActivityItem(data.items));
-  }, [activityItem?.id]);
-  console.log(activityItem); */
 
   return (
     <div>
@@ -37,6 +31,7 @@ const ActivityDetails = () => {
         </p>
         <p>{activity.description}</p>
       </div>
+      <Navigation />
     </div>
   );
 };
