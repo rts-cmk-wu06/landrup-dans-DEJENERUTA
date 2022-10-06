@@ -22,7 +22,9 @@ React Router Dom bruges til at bygge enkeltsides applikationer, dvs. applikation
 Tailwind CSS gør det hurtigere at skrive og vedligeholde koden til din applikation. Ved at bruge denne utility-first framework behøver du ikke skrive tilpasset CSS for at style din applikation. I stedet kan du bruge hjælpeklasser til at kontrollere udfyldning, margen, farve, skrifttype, skygge og mere af din applikation. den mest vellidte utility-first CSS-Framework til hurtig UI-oprettelse er Tailwind CSS. Det er nemt at tilpasse, tilpasser sig til enhver design, og byggestørrelsen er lille." Tailwind gør bare mit liv nemmere. Det er stadig CSS og du bruger flex grid osv. men bare hurtigere at skrive og vedligeholde.
 
 # process
-projektarbejdsproces foregår som følgende, jeg opretter et issues på Github og opretter projekt på Github kanban board. derefter begynder jeg at oprette forskellige brunchs og begynder at arbejde, jeg laver commit og push hver gang jeg lavede en ny implimentations
+projektarbejdsproces foregår som følgende, jeg opretter et issues på Github og opretter projekt på Github kanban board. derefter begynder jeg at oprette forskellige brunchs og begynder at arbejde, jeg laver commit, push og merge hver gang jeg lavede en ny implimentations
+<img width="1397" alt="merge" src="https://user-images.githubusercontent.com/45858936/194411900-fee22a0d-2f51-4eb0-aa77-2140ece9fbfb.png">
+
 
 # Versionsstyring:
 Jeg brugte github som mit projektstyringsværktøj, jeg lavede et issue og Github kanban board og styrede mit projekt. GitHub er en kode-hosting-platform til versionskontrol og samarbejde. Det lader dig og andre arbejde sammen om projekter fra hvor som helst.
