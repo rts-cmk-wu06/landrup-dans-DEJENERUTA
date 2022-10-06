@@ -6,7 +6,7 @@ import img from "../assets/splash-image.jpg";
 import { userContext } from "../context/UserContext";
 
 const Login = () => {
-  const { userData, setUserData } = useContext(userContext); // store the user data in the state
+  const { userData, setUserData } = useContext(userContext);
   const emailRegEx =
     /^([^.][a-z,0-9,!#$%&'*+\-/=?^_`{|}~.]{1,64})([^.,\s]@)([a-z-]{1,255})(\.[a-z0-9]{2,})$/gi;
   const schema = yup.object({

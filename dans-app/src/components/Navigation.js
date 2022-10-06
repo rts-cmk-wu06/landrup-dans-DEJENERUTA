@@ -9,8 +9,6 @@ const Navigation = () => {
     <div>
       <nav className="bg-purple text-white">
         <ul className="flex justify-between p-4 bg-white text-black">
-          {/* link home icon to Activities page */}
-
           <Link to="/activities">
             <li className="rounded-full border boreder-2 border-black p-4">
               <FiHome className="text-3xl" />
