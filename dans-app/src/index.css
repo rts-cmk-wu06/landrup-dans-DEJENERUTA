@@ -27,8 +27,6 @@ body {
 } */
 
 .skew {
-  /* @included skew(25, 10);
-  @included transform-origin(top right); */
   top: 25%;
   left: 25%;
   position: absolute;
