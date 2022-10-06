@@ -15,3 +15,26 @@ body {
 .logo {
   font-family: Roboto Racing san one;
 }
+/* .skew {
+  @included skew(25, 10);
+  @included transform-origin(top right);
+  top: 25%;
+  left: 25%;
+  position: absolute;
+  transform: skew(50deg);
+  bottom: 25%;
+  right: 25%;
+} */
+
+.skew {
+  /* @included skew(25, 10);
+  @included transform-origin(top right); */
+  top: 25%;
+  left: 25%;
+  position: absolute;
+  transform: skew(0 8deg);
+  translatey: (-28%);
+  bottom: 25%;
+  right: 25%;
+  opacity: 0.5;
+}

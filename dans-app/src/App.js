@@ -5,23 +5,26 @@ import Activities from "./pages/Activities";
 import Calander from "./pages/Calander";
 import Search from "./pages/Search";
 import ActivityDetails from "./pages/ActivityDetails";
+import UserContextProvider from "./context/UserContext";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/" element={<Welcome />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/calander" element={<Calander />} />
-          <Route path="/search" element={<Search />} />
-          <Route
-            path="/activitydetails/:activityId"
-            element={<ActivityDetails />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <UserContextProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/" element={<Welcome />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/calander" element={<Calander />} />
+            <Route path="/search" element={<Search />} />
+            <Route
+              path="/activitydetails/:activityId"
+              element={<ActivityDetails />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </UserContextProvider>
     </>
   );
 }
