@@ -4,8 +4,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import img from "../assets/splash-image.jpg";
 import { userContext } from "../context/UserContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const { userData, setUserData } = useContext(userContext);
   const emailRegEx =
     /^([^.][a-z,0-9,!#$%&'*+\-/=?^_`{|}~.]{1,64})([^.,\s]@)([a-z-]{1,255})(\.[a-z0-9]{2,})$/gi;
@@ -72,7 +74,10 @@ const Login = () => {
           />
         </div>
 
-        <button className="absolute bottom-28 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple">
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute bottom-28 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple"
+        >
           Log ind
         </button>
       </form>
