@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
+import { useNavigate } from "react-router-dom";
 
 const ActivityDetails = () => {
+  const navigate = useNavigate();
   const { activityId } = useParams();
   const [activity, setActivity] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     fetch(`http://localhost:4000/api/v1/activities/${activityId}`)
       .then((response) => response.json())
