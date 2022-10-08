@@ -22,8 +22,11 @@ Yup er en JavaScript-skemabygger til værdiparsing og validering. Definer et ske
 ### React-router-dom:
 React Router Dom bruges til at bygge enkeltsides applikationer, dvs. applikationer, der har mange sider eller komponenter, men siden bliver aldrig opdateret i stedet for, at indholdet hentes dynamisk baseret på URL'en. Denne proces kaldes Routing, og den er muliggjort ved hjælp af React Router Dom.
 
+# Versionsstyring:
+Jeg brugte github som mit projektstyringsværktøj, jeg lavede et issue og Github kanban board og styrede mit projekt. GitHub er en kode-hosting-platform til versionskontrol og samarbejde. Det lader dig og andre arbejde sammen om projekter fra hvor som helst.
+
 # process
-projektarbejdsproces foregår som følgende, jeg opretter et issues på Github og opretter projekt på Github kanban board. derefter begynder jeg at oprette forskellige brunchs og begynder at arbejde, jeg laver commit, push og merge hver gang jeg lavede en ny implimentations
+projektarbejdsproces foregår som følgende, jeg opretter et github issues på Github og opretter projekt på Github kanban board. derefter begynder jeg at oprette forskellige brunchs og begynder at arbejde, jeg laver commit, push og merge hver gang jeg lavede en ny implimentations
 
 ### Github issues
 <img width="1412" alt="landrup-github-issue" src="https://user-images.githubusercontent.com/45858936/193700768-f01cb7df-a70f-4246-84f2-e91409780a89.png">
@@ -33,8 +36,7 @@ projektarbejdsproces foregår som følgende, jeg opretter et issues på Github o
 
 <img width="1397" alt="merge" src="https://user-images.githubusercontent.com/45858936/194411900-fee22a0d-2f51-4eb0-aa77-2140ece9fbfb.png">
 
-# Versionsstyring:
-Jeg brugte github som mit projektstyringsværktøj, jeg lavede et issue og Github kanban board og styrede mit projekt. GitHub er en kode-hosting-platform til versionskontrol og samarbejde. Det lader dig og andre arbejde sammen om projekter fra hvor som helst.
+
 
 ### code example
 ``` jsx
@@ -60,7 +62,7 @@ const ActivityDetails = () => {
 Vercel er en platform til at implementere de hurtigste React-webstites. Du kan implementere dit websted med nul konfiguration til den bedste frontend-infrastruktur.
 
 # Tech-Stack perspektivering:
-Dette projekt kan bygges med Vue,js eller Next.js, men jeg valgte React.js på grund af forskellige årsager
+Dette projekt kan bygges alternativt med Vue,js eller Next.js, men jeg valgte React.js på grund af forskellige årsager
 1. Jeg er meget komfortabel med reactjs end de ovennævnte 2 Frameworks.
 2. Jeg har også mere erfaring med React.js end de andre 2 Frameworks.
 3. React er i øjeblikket populært end de andre 2 Frameworks, så efter min forståelse er React.js det rigtige valg til dette projekt.
