@@ -43,23 +43,26 @@ projektarbejdsproces foregår som følgende, jeg opretter et github issues på G
 
 ### code example
 ``` jsx
-const ActivityDetails = () => {
-  const { activityId } = useParams();
-  const [activity, setActivity] = useState([]);
-  const [activityItem, setActivityItem] = useState([]);
-  useEffect(() => {
-    fetch(`http://localhost:4000/api/v1/activities/${activityId}`)
-      .then((response) => response.json())
-      .then((data) => setActivity(data));
-  }, [activityId]);
-  console.log(activity);
+const Search = () => {
+  const [activities, setActivities] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:4000/api/v1/activities/${activityItem?.id}`)
+    fetch("http://localhost:4000/api/v1/activities")
       .then((response) => response.json())
-      .then((data) => setActivityItem(data.items));
-  }, [activityItem?.id]);
-  console.log(activityItem);
+      .then((data) => setActivities(data));
+  }, []);
+
+  const filteredActivities = activities.filter((activity) => {
+    return activity.name.toLowerCase().includes(searchQuery.toLowerCase());
+  });
+  
+   {filteredActivities.length === 0 && (
+        <p className="text-2xl">
+          Der blev ikke fundet noget activiteter. prøve at søge efter noget
+          andet.
+        </p>
+      )}
   ```
 # Deployment
 Vercel er en platform til at implementere de hurtigste React-webstites. Du kan implementere dit websted med nul konfiguration til den bedste frontend-infrastruktur.
