@@ -1,7 +1,8 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 export const userContext = createContext(null);
 const UserContextProvider = ({ children }) => {
-  const [userData, setUserData] = useState(null); // store the user data in the state
+  const [userData, setUserData] = useState({});
+
   return (
     <userContext.Provider value={{ userData, setUserData }}>
       {children}

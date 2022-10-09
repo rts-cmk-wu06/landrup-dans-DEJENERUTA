@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Activity from "../components/Activity";
 import Navigation from "../components/Navigation";
-/* import { BiSearch } from "react-icons/bi"; */
 const Search = () => {
   const [activities, setActivities] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -11,10 +10,6 @@ const Search = () => {
       .then((response) => response.json())
       .then((data) => setActivities(data));
   }, []);
-
-  /*  const filteredActivities = activities.filter((activity) => {
-    return activity.name.toLowerCase().includes(searchQuery.toLowerCase());
-  }); */
 
   const filteredActivities = activities.filter((activity) => {
     console.log(activity);
@@ -35,9 +30,6 @@ const Search = () => {
         {filteredActivities.map((activity) => (
           <Activity activity={activity} />
         ))}
-        {/* {activities.map((activity) => (
-          <Activity activity={activity} />
-        ))} */}
         <Navigation />
       </div>
     </div>

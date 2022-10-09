@@ -4,9 +4,11 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import img from "../assets/splash-image.jpg";
 import { userContext } from "../context/UserContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const { userData, setUserData } = useContext(userContext); // store the user data in the state
+  const navigate = useNavigate();
+  const { userData, setUserData } = useContext(userContext);
   const emailRegEx =
     /^([^.][a-z,0-9,!#$%&'*+\-/=?^_`{|}~.]{1,64})([^.,\s]@)([a-z-]{1,255})(\.[a-z0-9]{2,})$/gi;
   const schema = yup.object({
@@ -17,6 +19,7 @@ const Login = () => {
       .min(4, "adgangskode skal være på mindst 4 tegn")
       .max(20, "adgangskode må højst være på 20 tegn"),
   });
+
   const {
     register,
     handleSubmit,
@@ -50,7 +53,7 @@ const Login = () => {
         backgroundImage: `url(${img})`,
       }}
     >
-      <div className="skew absolute inset-0 bg-gray-400 origin-center rotate-45 max-h-80 opacity-30"></div>
+      <div className="skew absolute inset-0 bg-gray origin-center rotate-45 max-h-80 opacity-1"></div>
       <h1 className="absolute bottom-1/2 pl-16 text-white font-bold text-2xl mb-2">
         Log ind
       </h1>
@@ -60,21 +63,22 @@ const Login = () => {
           <input
             type="text"
             placeholder="brugernavn"
-            className="bg-white w-64 h-12 placeholder:p-6 border-none outline-none"
+            className="bg-white w-64 h-12 mt-4 placeholder:p-6 border-none outline-none"
             {...register("brugernavn")}
           />
           {errors.adgangskode?.message}
           <input
             type="password"
             placeholder="adgangskode"
-            className="bg-white  w-64 h-12  mt-2 placeholder:p-6 border-none outline-none"
+            className="bg-white  w-64 h-12  mt-4 placeholder:p-6 border-none outline-none"
             {...register("adgangskode")}
           />
         </div>
 
-        <button className="absolute bottom-28 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple">
+        <button className="absolute bottom-28 w-48 m-auto mt-4 rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple">
           Log ind
         </button>
+        <button>Tilmeld</button>
       </form>
     </div>
   );

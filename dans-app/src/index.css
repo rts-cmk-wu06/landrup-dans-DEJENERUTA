@@ -15,26 +15,26 @@ body {
 .logo {
   font-family: Roboto Racing san one;
 }
-/* .skew {
-  @included skew(25, 10);
-  @included transform-origin(top right);
-  top: 25%;
-  left: 25%;
-  position: absolute;
-  transform: skew(50deg);
-  bottom: 25%;
-  right: 25%;
-} */
-
 .skew {
-  /* @included skew(25, 10);
-  @included transform-origin(top right); */
-  top: 25%;
-  left: 25%;
-  position: absolute;
-  transform: skew(0 8deg);
-  translatey: (-28%);
-  bottom: 25%;
-  right: 25%;
+  transform: skew(0deg, -15deg);
   opacity: 0.5;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  bottom: -10;
+  max-height: 550px;
+}
+.kom-igang {
+  animation: kom-igang 1500ms ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}
+@keyframes kom-igang {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
