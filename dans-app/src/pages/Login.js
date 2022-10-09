@@ -27,7 +27,6 @@ const Login = () => {
   } = useForm({ resolver: yupResolver(schema) });
 
   const onSubmit = (data) => {
-    console.log(data);
     fetch("http://localhost:4000/auth/token", {
       method: "POST",
       headers: {
@@ -41,9 +40,8 @@ const Login = () => {
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
-        console.log(data);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => console.error(err));
   };
 
   return (
