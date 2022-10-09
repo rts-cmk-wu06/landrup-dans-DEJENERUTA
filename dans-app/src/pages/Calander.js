@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { userContext } from "../context/UserContext";
 import Navigation from "../components/Navigation";
+import { Link } from "react-router-dom";
 
 const Calander = () => {
   const { userData, setUserData } = useContext(userContext);
@@ -22,8 +23,16 @@ const Calander = () => {
   });
 
   return (
-    <div className="bg-purple">
-      <h1 className="text-4xl p-4 ml-3 text-white">Calander</h1>
+    <div>
+      <h1 className=" bg-purple text-4xl p-4  text-white">Calander</h1>
+      {userData.userId === undefined && (
+        <Link
+          to="/login"
+          className="w-48 m-auto mt-4 mb-4 rounded-xl h-14 flex justify-center p-6 items-center text-center  text-white text-xl pb-8 bg-purple"
+        >
+          Log ind
+        </Link>
+      )}
 
       {userData?.activities?.map((activity) => (
         <div
