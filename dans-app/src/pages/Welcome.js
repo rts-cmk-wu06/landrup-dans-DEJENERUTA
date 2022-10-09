@@ -11,14 +11,14 @@ const Welcome = () => {
         backgroundImage: `url(${img})`,
       }}
     >
-      <h1 className="absolute top-1/2 left-5 text-4xl font-Roboto">
-        <span className="font text-2xl">
+      <h1 className="absolute top-1/2 left-5 font-Roboto">
+        <span className="font text-lg">
           <img src={img1} alt="landrup" />
         </span>
         <br />
         <span className="text-6xl text-pink font-bold">DANS</span>
       </h1>
-      <div className="underline absolute bg-purple w-2/3 top-2/3 h-4 mt-4"></div>
+      <div className="underline absolute bg-purple w-2/3 top-2/3 h-4 mt-2"></div>
       <Link
         to="/activities"
         className="absolute bottom-12 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple"

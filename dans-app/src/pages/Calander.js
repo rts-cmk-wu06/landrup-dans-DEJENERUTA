@@ -24,16 +24,8 @@ const Calander = ({ setRedirectPathAfterLogin }) => {
   }, [setRedirectPathAfterLogin, setUserData, userData]);
 
   return (
-    <div>
-      <h1 className=" bg-purple text-4xl p-4  text-white">Calander</h1>
-      {userData.userId === undefined && (
-        <Link
-          to="/login"
-          className="w-48 m-auto mt-4 mb-4 rounded-xl h-14 flex justify-center p-6 items-center text-center  text-white text-xl pb-8 bg-purple"
-        >
-          Log ind
-        </Link>
-      )}
+    <div className=" bg-purple">
+      <h1 className=" text-4xl p-4  text-white">Calander</h1>
 
       {userData?.activities?.map((activity) => (
         <div
@@ -42,10 +34,18 @@ const Calander = ({ setRedirectPathAfterLogin }) => {
         >
           <h2>{activity?.name}</h2>
           <p>
-            {userData?.weekday} {userData?.time}
+            {activity.weekday} {activity?.time}
           </p>
         </div>
       ))}
+      {userData.userId === undefined && (
+        <Link
+          to="/login"
+          className="w-48 m-auto mt-4 mb-4 rounded-xl h-14 flex justify-center p-6 items-center text-center  text-white text-xl pb-8 bg-pink"
+        >
+          Log ind
+        </Link>
+      )}
       <Navigation />
     </div>
   );

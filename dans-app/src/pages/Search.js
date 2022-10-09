@@ -32,7 +32,7 @@ const Search = () => {
       )}
       <div>
         {filteredActivities.map((activity) => (
-          <Activity activity={activity} />
+          <Activity key={activity.id} activity={activity} />
         ))}
         <Navigation />
       </div>

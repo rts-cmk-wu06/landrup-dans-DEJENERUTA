@@ -39,7 +39,7 @@ const Login = ({ redirectPathAfterLogin }) => {
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
-        navigate(redirectPathAfterLogin || "/");
+        navigate(redirectPathAfterLogin || "/"); //back to where you came from or home
       })
       .catch((err) => console.error(err));
   };
@@ -55,13 +55,13 @@ const Login = ({ redirectPathAfterLogin }) => {
       <h1 className="absolute bottom-1/2 pl-16 text-white font-bold text-2xl mb-2">
         Log ind
       </h1>
-      <form onSubmit={handleSubmit(onSubmit)} className="login-form">
+      <form onSubmit={handleSubmit(onSubmit)} className="login-form text-white">
         <div className="absolute top-1/2 left-0 w-full h-full gap-4 m-auto column justify-center items-center text-center ">
           {errors.brugernavn?.message}
           <input
             type="text"
             placeholder="brugernavn"
-            className="bg-white w-64 h-12 mt-4 placeholder:p-6 border-none outline-none"
+            className="block justify-center items-center bg-white w-64 h-12 m-auto placeholder:p-6 border-none outline-none "
             {...register("brugernavn")}
           />
           {errors.adgangskode?.message}
