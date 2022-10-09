@@ -14,6 +14,7 @@ const Welcome = () => {
         LANDRUP <br />
         <span className="text-6xl text-pink font-bold">DANS</span>
       </h1>
+
       <div className="underline absolute bg-purple w-2/3 top-2/3 h-4"></div>
       <Link
         to="/activities"
