@@ -3,10 +3,11 @@ import { userContext } from "../context/UserContext";
 import Navigation from "../components/Navigation";
 import { Link } from "react-router-dom";
 
-const Calander = () => {
+const Calander = ({ setRedirectPathAfterLogin }) => {
   const { userData, setUserData } = useContext(userContext);
 
   useEffect(() => {
+    setRedirectPathAfterLogin("/calander");
     if (userData.userId === undefined) {
       return;
     }
@@ -20,7 +21,7 @@ const Calander = () => {
       .then((data) => {
         setUserData(data);
       });
-  });
+  }, [setRedirectPathAfterLogin, setUserData, userData]);
 
   return (
     <div>
