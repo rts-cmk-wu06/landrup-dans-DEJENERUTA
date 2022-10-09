@@ -57,6 +57,10 @@ const Search = () => {
     return activity.name.toLowerCase().includes(searchQuery.toLowerCase());
   });
   
+   {filteredActivities.map((activity) => (
+          <Activity activity={activity} />
+        ))}
+  
    {filteredActivities.length === 0 && (
         <p className="text-2xl">
           Der blev ikke fundet noget activiteter. prøve at søge efter noget
