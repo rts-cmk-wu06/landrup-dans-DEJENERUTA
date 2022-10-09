@@ -5,7 +5,7 @@ import Navigation from "../components/Navigation";
 import { userContext } from "../context/UserContext";
 
 const ActivityDetails = ({ setRedirectPathAfterLogin }) => {
-  const { userData, setUserData } = useContext(userContext);
+  const { userData } = useContext(userContext);
 
   const { activityId } = useParams();
   const [activity, setActivity] = useState([]);
