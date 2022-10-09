@@ -6,7 +6,7 @@ import img from "../assets/splash-image.jpg";
 import { userContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ redirectPathAfterLogin }) => {
   const navigate = useNavigate();
   const { userData, setUserData } = useContext(userContext);
   const emailRegEx =
@@ -40,6 +40,7 @@ const Login = () => {
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
+        navigate(redirectPathAfterLogin || "/");
       })
       .catch((err) => console.error(err));
   };

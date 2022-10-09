@@ -10,13 +10,18 @@ import UserContextProvider from "./context/UserContext";
 
 function App() {
   const [redirectPathAfterLogin, setRedirectPathAfterLogin] = useState(null);
-  console.log(redirectPathAfterLogin);
+
   return (
     <>
       <UserContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route
+              path="/login"
+              element={
+                <Login redirectPathAfterLogin={redirectPathAfterLogin} />
+              }
+            />
             <Route path="/" element={<Welcome />} />
             <Route path="/activities" element={<Activities />} />
             <Route
