@@ -26,6 +26,12 @@ const Search = () => {
         type="text"
         placeholder="Search"
       />
+      {filteredActivities.length === 0 && (
+        <p className="text-2xl">
+          Der blev ikke fundet noget activiteter. prøve at søge efter noget
+          andet.
+        </p>
+      )}
       <div>
         {filteredActivities.map((activity) => (
           <Activity activity={activity} />
