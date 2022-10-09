@@ -41,7 +41,7 @@ projektarbejdsproces foregår som følgende, jeg opretter et github issues på G
 
 
 
-### code example
+### code example [ Search page ]
 ``` jsx
 const Search = () => {
   const [activities, setActivities] = useState([]);
