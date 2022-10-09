@@ -15,7 +15,7 @@ const Activities = () => {
     <div className="bg-purple text-white gap-4">
       <h1 className="text-4xl p-8 ml-3">Aktiviteter</h1>
       {activities.map((activity) => (
-        <Activity activity={activity} />
+        <Activity key={activity.id} activity={activity} />
       ))}
       <Navigation />
     </div>

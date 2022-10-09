@@ -12,10 +12,8 @@ const Search = () => {
   }, []);
 
   const filteredActivities = activities.filter((activity) => {
-    console.log(activity);
     return activity.name.toLowerCase().includes(searchQuery.toLowerCase());
   });
-  console.log(filteredActivities);
 
   return (
     <div className="bg-purple text-white gap-4">

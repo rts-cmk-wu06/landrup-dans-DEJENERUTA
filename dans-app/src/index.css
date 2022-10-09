@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-family: ubuntu;
+  font-family: Ubuntu;
   height: 100%;
 }
 #root {
@@ -13,7 +13,7 @@ body {
   height: 100%;
 }
 .logo {
-  font-family: Roboto Racing san one;
+  font-family: Roboto, "Racing Sans One";
 }
 .skew {
   transform: skew(0deg, -15deg);
@@ -37,4 +37,7 @@ body {
   100% {
     opacity: 1;
   }
+}
+.font {
+  font-family: Roboto, "Racing Sans One";
 }

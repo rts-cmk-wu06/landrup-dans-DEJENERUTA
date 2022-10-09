@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import img from "../assets/splash-image.jpg";
+import img1 from "../assets/landrup.jpg";
 
 const Welcome = () => {
   return (
@@ -10,15 +11,17 @@ const Welcome = () => {
         backgroundImage: `url(${img})`,
       }}
     >
-      <h1 className="logo absolute top-1/2 left-5 text-4xl">
-        LANDRUP <br />
+      <h1 className="absolute top-1/2 left-5 text-4xl font-Roboto">
+        <span className="font text-2xl">
+          <img src={img1} alt="landrup" />
+        </span>
+        <br />
         <span className="text-6xl text-pink font-bold">DANS</span>
       </h1>
-
-      <div className="underline absolute bg-purple w-2/3 top-2/3 h-4"></div>
+      <div className="underline absolute bg-purple w-2/3 top-2/3 h-4 mt-4"></div>
       <Link
         to="/activities"
-        className="kom-igang absolute bottom-12 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple"
+        className="absolute bottom-12 w-48 m-auto rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple"
       >
         kom i gang
       </Link>
