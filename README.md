@@ -11,6 +11,9 @@ På grund af React-skabelonen føler jeg, at jeg også sparer en masse tid under
 # Core Frameworks:
 ### TailwindCss:
 Tailwind CSS gør det hurtigere at skrive og vedligeholde koden til din applikation. Ved at bruge denne utility-first framework behøver du ikke skrive tilpasset CSS for at style din applikation. I stedet kan du bruge hjælpeklasser til at kontrollere udfyldning, margen, farve, skrifttype, skygge og mere af din applikation. den mest vellidte utility-first CSS-Framework til hurtig UI-oprettelse er Tailwind CSS. Det er nemt at tilpasse, tilpasser sig til enhver design, og byggestørrelsen er lille." Tailwind gør bare mit liv nemmere. Det er stadig CSS og du bruger flex grid osv. men bare hurtigere at skrive og vedligeholde.
+TailwindCSS er for mig langt den bedste og mest effektive måde at skrive CSS på.
+Men det kan helt sikkert føles som meget at lære, når man lige skal i gang.
+Den officielle dokumentation er ret god, men nogle gange har du bare brug for et hurtigt overblik over alle de forskellige muligheder.
 
 # Core Packet
 ### React-hook-form:
