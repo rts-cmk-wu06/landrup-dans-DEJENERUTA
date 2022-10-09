@@ -4,17 +4,18 @@ import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import { userContext } from "../context/UserContext";
 
-const ActivityDetails = () => {
-  const { userData, setUserData } = useContext(userContext);
+const ActivityDetails = ({ setRedirectPathAfterLogin }) => {
+  const { userData } = useContext(userContext);
 
   const { activityId } = useParams();
   const [activity, setActivity] = useState([]);
 
   useEffect(() => {
+    setRedirectPathAfterLogin(`/ActivityDetails/${activityId}`);
     fetch(`http://localhost:4000/api/v1/activities/${activityId}`)
       .then((response) => response.json())
       .then((data) => setActivity(data));
-  }, [activityId]);
+  }, [activityId, setRedirectPathAfterLogin]);
 
   const addUser = useCallback(() => {
     fetch(

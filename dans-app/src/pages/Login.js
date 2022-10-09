@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
@@ -6,11 +6,10 @@ import img from "../assets/splash-image.jpg";
 import { userContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ redirectPathAfterLogin }) => {
   const navigate = useNavigate();
-  const { userData, setUserData } = useContext(userContext);
-  const emailRegEx =
-    /^([^.][a-z,0-9,!#$%&'*+\-/=?^_`{|}~.]{1,64})([^.,\s]@)([a-z-]{1,255})(\.[a-z0-9]{2,})$/gi;
+  const { setUserData } = useContext(userContext);
+
   const schema = yup.object({
     brugernavn: yup.string().required("brugernavn er påvirker"),
     adgangskode: yup
@@ -40,6 +39,7 @@ const Login = () => {
       .then((res) => res.json())
       .then((data) => {
         setUserData(data);
+        navigate(redirectPathAfterLogin || "/");
       })
       .catch((err) => console.error(err));
   };
@@ -76,7 +76,6 @@ const Login = () => {
         <button className="absolute bottom-28 w-48 m-auto mt-4 rounded-xl h-12 flex justify-center p-6 items-center text-center right-0 left-0 text-white text-xl pb-8 bg-purple">
           Log ind
         </button>
-        <button>Tilmeld</button>
       </form>
     </div>
   );
